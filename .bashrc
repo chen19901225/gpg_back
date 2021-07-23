@@ -1,0 +1,1 @@
+alias pmv="gb && mv bin/gpg_back ~/soft"
