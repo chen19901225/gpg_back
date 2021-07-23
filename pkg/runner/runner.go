@@ -53,6 +53,7 @@ func Run(database string, bin string, dir string, backup int, verbose int) error
 	}
 	// log.
 	logArr("文件目录", matches)
+	// 获取路径的key 用于路径排序
 	var ffileKey = func(filePath string) (int64, error) {
 		nameArr := strings.Split(filePath, "/")
 		name := nameArr[len(nameArr)-1]
